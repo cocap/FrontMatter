@@ -7,7 +7,6 @@ baseurl: https://cocap.github.io/FrontMatter/
 
 # build settings
 port: 4000
-highlighter: pygments
 markdown: Kramdown
 permalink: pretty
 sass:
