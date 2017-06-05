@@ -1,0 +1,27 @@
+<header class="fixed">
+    <nav class="blue-grey darken-4">
+        <div class="nav-wrapper">
+            <div class="container">
+                <a href="/" class="brand-logo col s4">Navn på Siden</a>
+                <ul class="right hide-on-med-and-down">
+                  <li>
+                    <form>
+                      <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons search_close">close</i>
+                      </div>
+                    </form>
+                  </li>
+                  <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons">more_vert</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="{{ "/forfatteren" | prepend: site.baseurl }}">Forfatteren</a></li>
+      <li><a href="{{ "/om-siden" | prepend: site.baseurl }}">Om Siden</a></li>
+      <li><a href="{{ "/kontakt" | prepend: site.baseurl }}">Kontakt</a></li>
+    </ul>
+</header>

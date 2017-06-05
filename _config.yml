@@ -1,0 +1,13 @@
+# site settings
+title: FrontMatter Templating
+author: Morten Pradsgaard
+description: "Awesome description [01]"
+site.url: http://localhost:4000
+
+# build settings
+port: 4000
+highlighter: pygments
+markdown: Kramdown
+permalink: pretty
+sass:
+    style: compressed
