@@ -2,7 +2,8 @@
 title: FrontMatter Templating
 author: Morten Pradsgaard
 description: "Awesome description [01]"
-site.url: http://localhost:4000
+siteurl: https://cocap.github.io/FrontMatter/
+baseurl: https://cocap.github.io/FrontMatter/
 
 # build settings
 port: 4000
