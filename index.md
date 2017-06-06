@@ -19,7 +19,7 @@ layout: default
       <div class="row">
 {% for post in site.posts %}
                 <div class="col s12 m6 l4">
-                  <a href="{{ post.url }}">
+                  <a href="/FrontMatter/{{ post.url }}">
                     <div class="card">
                       <div class="card-image">
                         <img src="{{ site.baseurl }}/assets/img/{{ post.image }}">
