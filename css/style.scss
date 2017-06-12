@@ -16,9 +16,11 @@ img {width:100%;}
 }
 label.label-icon {
 padding-left: 200px;
+transition: all .2s;
 }
 label.label-icon.active {
-padding-left:0;
+padding-left:10px;
+transition: all .2s;
 }
 
 //Header

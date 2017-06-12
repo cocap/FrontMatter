@@ -6,8 +6,9 @@ siteurl: https://cocap.github.io/FrontMatter/
 baseurl: /FrontMatter/
 
 # build settings
+excerpt_separator: <!--more-->
 port: 4000
-markdown: Kramdown
+markdown: markdownify
 permalink: pretty
 sass:
     style: compressed
