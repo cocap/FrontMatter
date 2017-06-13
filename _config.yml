@@ -8,7 +8,7 @@ baseurl: /FrontMatter/
 # build settings
 excerpt_separator: <!--more-->
 port: 4000
-markdown: markdownify
+markdown: Kramdown
 permalink: pretty
 sass:
     style: compressed
