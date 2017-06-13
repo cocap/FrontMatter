@@ -25,8 +25,8 @@
 
   .page_header {
     overflow: hidden;
-    @media (min-width: 100px) { padding-bottom: 60%;  }
-    @media (min-width: 700px) { padding-bottom: 40%;  }
+    @media (min-width: 1px) {     padding-bottom: 40vh;  }
+    @media (min-width: 720px) {   padding-bottom: 60vh;  }
   }
 
   .page_header img {
