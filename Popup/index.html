@@ -1,0 +1,32 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!--Container for newsletter signup-->
+<div id="signupToggled">
+
+<p>Nyhedsbrevs blah blah her</p>
+
+</div>
+
+<!--un toggled = X && toggled = Minified Container-->
+<div id="signupToggle"></div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+$( document ).ready(function() {
+
+  $( "#signupToggle" ).click(function(e) { //(e) for non rep. & start animation
+    $( "#signupToggled" ).slideToggle( "fast", function() { /*Animation Done*/ });
+    $(this).toggleClass('is-active'); //Replacing the X with an actual container
+  });
+
+});
+
+</script>
+</body>
+</html>

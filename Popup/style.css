@@ -1,0 +1,64 @@
+#signupToggle.is-active { /*Toggled/Minified Container*/
+  position:fixed;bottom:-10px;left: 2vw;
+  width:250px;height:60px;
+  background-color:#2980b9;
+  transition: all .2s;
+  box-shadow:
+  0 8px 10px 1px rgba(0,0,0,0.14),
+  0 3px 14px 2px rgba(0,0,0,0.12),
+  0 5px 5px -3px rgba(0,0,0,0.3);
+}#signupToggle.is-active:hover {
+  cursor: pointer;
+  bottom:0px;
+  box-shadow:
+  0 16px 24px 2px rgba(0,0,0,0.14),
+  0 6px 30px 5px rgba(0,0,0,0.12),
+  0 8px 10px -5px rgba(0,0,0,0.3);
+}
+#signupToggle:after {/*Text for Toggled/Minified Container*/
+  position:fixed;bottom: 10px;left:110px;
+  font-family: 'Helvetica';font-weight: 900;font-size: 1em;
+  color: #fff;content: "Nyhedsbrev";
+  display:none;
+  transition: all .2s;
+}#signupToggle:hover::after { bottom: 15px; }
+
+#signupToggle.is-active:after {/*Displaying the Toggle*/
+display:block;  }
+
+#signupToggle:before { /*Text for Close button*/
+  position:fixed;bottom: 369px;left:609px;
+  font-family: 'Helvetica';font-weight: 900;font-size: 1.5em;
+  color:#fff;text-decoration:none;
+  background-color:#2980b9;
+  padding: 6px 10px  5px 11px;
+  border-radius: 50%;
+  box-shadow:
+  0 4px 5px 0 rgba(0,0,0,0.14),
+  0 1px 10px 0 rgba(0,0,0,0.12),
+  0 2px 4px -1px rgba(0,0,0,0.3);
+  transition: all .2s;
+  content: "X";
+}#signupToggle:hover::before {
+  box-shadow:
+  0 16px 24px 2px rgba(0,0,0,0.14),
+  0 6px 30px 5px rgba(0,0,0,0.12),
+  0 8px 10px -5px rgba(0,0,0,0.3);
+}
+
+#signupToggle.is-active:before {/*Displaying the close button*/
+display:none; }
+
+#signupToggled {/*Style for the Container*/
+  position:fixed;bottom: 0; left: 2vw;
+  width:600px;height:400px;
+  background-color:#000;color:#fff;
+  border-top-left-radius: 5px;
+  box-shadow:
+  0 6px 10px 0 rgba(0,0,0,0.14),
+  0 1px 18px 0 rgba(0,0,0,0.12),
+  0 3px 5px -1px rgba(0,0,0,0.3);
+}
+#signupToggled p {
+  padding: 20% 10%;
+}
