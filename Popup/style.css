@@ -34,7 +34,9 @@ display:block;  }
 
 #signupToggle:before { /*Text for Close button*/
   position:fixed;bottom: 20.5vw;left:35.5vw;
-  font-family: 'Helvetica';font-weight: 100;font-size: 1.5em;
+  font-family: 'Helvetica';
+  font-weight: 100;
+  font-size: 1.5em;
   color:#5d617d;text-decoration:none;
   background-color:transparent  ;
   padding: 6px 10px  5px 11px;
@@ -67,28 +69,27 @@ img {width:100%;height: auto;}
 
 
 
+/*FORM STYLE*/
 
-
-
-
-
-
-/* form starting stylings ------------------------------- */
-.group 			  {
+form {
+  font-family: 'Helvetica';
+  font-weight: 100;font-size: 1.5em;
+  margin: 50px 10%;
+}
+.group {
   position:relative;
 }
 input 				{
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
-  width:300px;
+  width:100%;
   border:none;
-  border-bottom:1px solid #757575;
+  border-bottom:1px solid rgba(255,255,255, 1);
   background:transparent;
 }
 input:focus 		{ outline:none; }
 
-/* LABEL ======================================= */
 label 				 {
   color:#999;
   font-size:18px;
@@ -102,14 +103,12 @@ label 				 {
   -webkit-transition:0.2s ease all;
 }
 
-/* active state */
 input:focus ~ label, input:valid ~ label 		{
   top:-20px;
   font-size:14px;
   color:#5264AE;
 }
 
-/* BOTTOM BARS ================================= */
 .bar 	{ position:relative; display:block; width:300px; }
 .bar:before, .bar:after 	{
   content:'';
@@ -117,7 +116,7 @@ input:focus ~ label, input:valid ~ label 		{
   width:0;
   bottom:1px;
   position:absolute;
-  background:#5264AE;
+  background:red;
   transition:0.2s ease all;
   -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
@@ -132,36 +131,4 @@ input:focus ~ label, input:valid ~ label 		{
 /* active state */
 input:focus ~ .bar:before, input:focus ~ .bar:after {
   width:50%;
-}
-
-/* HIGHLIGHTER ================================== */
-.highlight {
-  position:absolute;
-  height:60%;
-  width:100px;
-  top:25%;
-  left:0;
-  pointer-events:none;
-  opacity:0.5;
-}
-
-/* active state */
-input:focus ~ .highlight {
-  -webkit-animation:inputHighlighter 0.3s ease;
-  -moz-animation:inputHighlighter 0.3s ease;
-  animation:inputHighlighter 0.3s ease;
-}
-
-/* ANIMATIONS ================ */
-@-webkit-keyframes inputHighlighter {
-	from { background:#5264AE; }
-  to 	{ width:0; background:transparent; }
-}
-@-moz-keyframes inputHighlighter {
-	from { background:#5264AE; }
-  to 	{ width:0; background:transparent; }
-}
-@keyframes inputHighlighter {
-	from { background:#5264AE; }
-  to 	{ width:0; background:transparent; }
 }
