@@ -43,12 +43,21 @@ images: "http://i.imgur.com/DCfgKwb.jpg"
                           <i class="fa fa-share" aria-hidden="true"></i>
                         </a>
                         <ul>
-                          <li><a class="btn-floating blue darken-4"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-<li><a href="https://www.facebook.com/dialog/feed?app_id=488375674843191&redirect_uri={{post.url | prepend: site.siteurl}}&link={{post.url | prepend: site.siteurl}}&picture={{post.images}}&caption={{post.title}}&description=This%20is%20the%20description" target="blank">
-
-Share on Facebook</a></li>
-                          <li><a class="btn-floating blue darken-4"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          <li><a class="btn-floating blue darken-4"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+<li>
+<a class="btn-floating blue darken-4" href="https://www.facebook.com/dialog/feed?app_id=488375674843191&redirect_uri={{post.url | prepend: site.siteurl}}&link={{post.url | prepend: site.siteurl}}&picture={{post.images}}&caption={{post.title}}&description=This%20is%20the%20description" target="blank" target="blank">
+<i class="fa fa-facebook" aria-hidden="true"></i>
+</a>
+</li>
+<li>
+<a class="btn-floating blue darken-4" href="http://twitter.com/intent/tweet?status=[{{post.title}}]+[{{post.url | prepend: site.siteurl}}]" target="blank">
+<i class="fa fa-twitter" aria-hidden="true"></i>
+</a>
+</li>
+<li>
+<a class="btn-floating blue darken-4" href="http://www.linkedin.com/shareArticle?mini=true&url=[{{post.url | prepend: site.siteurl}}]&title=[{{post.title}}]&source=[{{site.url}}]" target="blank">
+<i class="fa fa-instagram" aria-hidden="true"></i>
+</a>
+</li>
                         </ul>
                       </div>
 
