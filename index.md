@@ -4,7 +4,7 @@ layout: default
 images: "http://i.imgur.com/DCfgKwb.jpg"
 ---
 <main>
-  <h1>{{ page.title }}</h1>
+  <h1 class="desktop">{{ page.title }}</h1>
   <div class="dot-matrix"></div>
   <div class="page_header parallax-zoom-blur">
     <img src="http://i.imgur.com/DCfgKwb.jpg" alt="{{ page.title }}" title="{{ page.title }}">
@@ -12,10 +12,6 @@ images: "http://i.imgur.com/DCfgKwb.jpg"
 
   <div class="page_wrapper">
     <div class="container">
-
-      <div class="row">
-        <h1 class="hide-on-med-and-up">{{ page.title }}</h1>
-      </div>
 
       <div class="row">
 {% for post in site.posts %}
