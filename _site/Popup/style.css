@@ -1,0 +1,134 @@
+@charset "UTF-8";
+#signupToggle { /*The Toggle original position (Creates the fly effect)*/
+  position:fixed;bottom: 21.5vw;left:36.5vw;
+}
+#signupToggle.is-active { /*Toggled/Minified Container*/
+  position:fixed;bottom:10px;left: 2vw;
+  width:10vw;height:40px;
+  background-color:#2980b9;
+  border-radius: 5px;
+  transition: all .2s;
+  box-shadow:
+  0 8px 10px 1px rgba(0,0,0,0.14),
+  0 3px 14px 2px rgba(0,0,0,0.12),
+  0 5px 5px -3px rgba(0,0,0,0.3);
+}#signupToggle.is-active:hover {
+  background-color:#2980b9;
+  cursor: pointer;
+  box-shadow:
+  0 16px 24px 2px rgba(0,0,0,0.14),
+  0 6px 30px 5px rgba(0,0,0,0.12),
+  0 8px 10px -5px rgba(0,0,0,0.3);
+}
+#signupToggle:after {/*Text for Toggled/Minified Container*/
+  position:relative;width:100%;text-align:center;
+  padding-top: 1em;
+  font-family: 'Helvetica';font-weight: 900;font-size: 14px;
+  color: #fff;content: attr(value);
+  display:none;
+  transition: all .2s;
+}#signupToggle:hover::after {  }
+
+#signupToggle.is-active:after {/*Displaying the Toggle*/
+display:block;  }
+
+#signupToggle:before { /*Text for Close button*/
+  position:fixed;bottom: 20.5vw;left:35.5vw;
+  font-family: 'Helvetica';
+  font-weight: 100;
+  font-size: 1.5em;
+  color:#5d617d;text-decoration:none;
+  background-color:transparent  ;
+  padding: 6px 10px  5px 11px;
+  border-radius: 50%;
+  transition: all .2s;
+  content: "X";
+}#signupToggle:hover::before {
+  cursor: pointer;
+  color:#fff;
+}
+
+#signupToggle.is-active:before {/*Displaying the close button*/
+display:none; }
+
+#signupToggled {/*Style for the Container*/
+  position:fixed;bottom: 0; left: 2vw;
+  width:36vw;height:23vw;
+  background-color:#2b2e40;color:#fff;
+  border-top-left-radius: 5px;
+  box-shadow:
+  0 6px 10px 0 rgba(0,0,0,0.14),
+  0 1px 18px 0 rgba(0,0,0,0.12),
+  0 3px 5px -1px rgba(0,0,0,0.3);
+}
+#signupToggled p {
+  padding: 16% 8%;
+}
+
+img {width:100%;height: auto;}
+
+
+
+/*FORM STYLE*/
+
+form {
+  font-family: 'Helvetica';
+  font-weight: 100;font-size: 1.5em;
+  margin: 50px 10%;
+}
+.group {
+  position:relative;
+}
+input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid rgba(255,255,255, 1);
+  background:transparent;
+}
+input:focus 		{ outline:none; }
+
+label 				 {
+  color:#999;
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:red;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}

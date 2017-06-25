@@ -3,20 +3,27 @@
 
   
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>Navn på siden</title>
-    <meta name="description" content="Awesome description [01]">
-    <!--Import Google Font-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <title>Navn på siden</title>
+  <meta name="description" content="Awesome description [01]">
+  <!--Import Google Font-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
-    <link rel="stylesheet" href="/FrontMatter/css/style.css">
-    <link rel="canonical" href="http://localhost:4000/FrontMatter//">
-    <link rel="alternate" type="application/rss+xml" title="FrontMatter Templating" href="http://localhost:4000feed.xml">
+  <link rel="stylesheet" href="/FrontMatter/css/style.css">
+  <link rel="canonical" href="http://localhost:4000/FrontMatter//">
+  <link rel="alternate" type="application/rss+xml" title="FrontMatter Templating" href="http://localhost:4000feed.xml">
+
+  <meta property="og:url"           content="https://cocap.github.io/FrontMatter//" />
+  <meta property="og:type"          content="article" />
+  <meta property="og:title"         content="Navn på siden" />
+  <meta property="og:description"   content="Awesome description [01]}" />
+  <meta property="og:image"         content="http://i.imgur.com/DCfgKwb.jpg" />
+
 </head>
 
 
@@ -67,44 +74,62 @@
 
 
                 <div class="col s12 m6 l6">
-                  <a href="/FrontMatter//artikel-den-kaekke-raev-tog-oellen">
+                  <a href="/FrontMatter//artikel/den-kaekke-raev-tog-oellen">
                     <div class="card">
                       <div class="card-image">
                         
                           
                             
+                        
+                            
                               
-                              &lt;img <main>
+                              <img src="http://i.imgur.com/DCfgKwb.jpg" alt="Den kække ræv tog øllen" title="Den kække ræv tog øllen" />
                             
                         <span class="card-title">Den kække ræv tog øllen</span>
-                      &lt;/div&gt;
+                      </div>
                       <div class="card-content">
-                        <p>Den kække ræv tog øllen &lt;img src="{"url"=&gt;"http://i.imgur.com/DCfgKwb.jpg"}" alt="Den kække ræv tog øllen" title="Den kække ræv tog øllen"&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis ligula risus, ac efficitur erat lacinia ut. Aenean pellentesque eros tortor, non luctus enim laoreet pellentesque. Sed sit amet ligula nec leo aliquam...</p>
+                        <p>
+
+  Den kække ræv tog øllen
+  
+  
+    
+  
+
+  
+    
+      
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis ligula risus, ac efficitur erat lacinia ut. Aenean pellentesque eros tortor, non luctus enim laoreet pellentesque. Sed sit amet ligula nec leo aliquam viverra eget a mauris.
+
+
+
+</p>
                       </div>
 
                       <div class="fixed-action-btn horizontal">
-                        <a class="btn-floating btn-large indigo darken-4">
+                        <a href="/FrontMatter//artikel/den-kaekke-raev-tog-oellen" class="btn-floating btn-large indigo darken-4">
                           <i class="fa fa-share" aria-hidden="true"></i>
                         </a>
                         <ul>
                           <li><a class="btn-floating blue darken-4"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                          <li><a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">Share on Facebook</a></li>
                           <li><a class="btn-floating blue darken-4"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                           <li><a class="btn-floating blue darken-4"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                         </ul>
                       </div>
 
-                    &lt;/div&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
+                    </div>
+                  </a>
+                </div>
 
 
 
-      &lt;/div&gt;
+      </div>
 
-    &lt;/div&gt;
-  &lt;/div&gt;
+    </div>
+  </div>
 </main>
-</div></div></a></div></div></div></div></main>
 
   </body>
 
@@ -158,5 +183,14 @@ $(window).scroll(function() {
 
 
 </script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 </html>

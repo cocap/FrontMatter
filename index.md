@@ -1,6 +1,7 @@
 ---
 title: Navn på siden
 layout: default
+images: "http://i.imgur.com/DCfgKwb.jpg"
 ---
 <main>
   <h1>{{ page.title }}</h1>
@@ -20,7 +21,7 @@ layout: default
 {% for post in site.posts %}
 
                 <div class="col s12 m6 l6">
-                  <a href="/FrontMatter/{{ post.url }}">
+                  <a href="{{ post.url | prepend: site.baseurl }}">
                     <div class="card">
                       <div class="card-image">
                         {% assign images = post.content | split:"<img " %}
@@ -38,11 +39,12 @@ layout: default
                       </div>
 
                       <div class="fixed-action-btn horizontal">
-                        <a class="btn-floating btn-large indigo darken-4">
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="btn-floating btn-large indigo darken-4">
                           <i class="fa fa-share" aria-hidden="true"></i>
                         </a>
                         <ul>
                           <li><a class="btn-floating blue darken-4"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                          <li><a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">Share on Facebook</a></li>
                           <li><a class="btn-floating blue darken-4"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                           <li><a class="btn-floating blue darken-4"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                         </ul>
