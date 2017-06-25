@@ -1,6 +1,6 @@
 ---
 layout: pages
-title: Forfatteren
+title: John Doe
 permalink: /forfatteren/
 ---
 <main>
@@ -16,15 +16,17 @@ permalink: /forfatteren/
 
         <h1 class="hide-on-med-and-up">{{ page.title }}</h1>
 
-          <blockquote>
-            This is an example quotation that uses the blockquote tag.
-          </blockquote>
-          <p class="flow-text">
-          <hr>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor orci et aliquet vehicula. Nulla laoreet laoreet mi. Aliquam ac nisl vitae ante porttitor cursus nec vel nulla. Duis consectetur est dui. Nunc tempor quam vehicula nunc semper, mattis bibendum ligula ultricies. Phasellus et rutrum dolor, id tincidunt ligula. Sed ligula mauris, commodo non fermentum in, placerat a velit. Sed odio sapien, luctus eu iaculis sed, ullamcorper sed arcu. Proin maximus, ligula vitae tempus lacinia, eros odio vulputate felis, ut euismod metus arcu id ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras tortor ante, dapibus a sem et, sollicitudin cursus mauris. Integer congue, tellus posuere sollicitudin tristique, lacus lacus tempor felis, vitae tincidunt est ipsum vel ipsum. Nunc sodales neque eget varius dictum. Integer non eleifend ex.
-          </p>
+        {% include auther.html %}
 
       </div>
+
+      <div class="row">
+        <h2>Uddybende beskrivelse her</h2>
+        <p class="flow-text">
+ Mauris vel tortor tincidunt, aliquam lacus vel, pellentesque ligula. Mauris varius consectetur libero, lobortis varius mi cursus nec. Pellentesque ac turpis in purus imperdiet viverra nec in lorem. Aliquam convallis tellus non arcu pretium, a aliquet sem finibus. Donec convallis id dui nec cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce sed fringilla est, at facilisis est. Aenean congue nisl in pulvinar posuere.
+        </p>
+      </div>
+
     </div>
   </div>
 </main>

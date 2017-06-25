@@ -20,7 +20,7 @@ images: "http://i.imgur.com/DCfgKwb.jpg"
       <div class="row">
 {% for post in site.posts %}
 
-                <div class="col s12 m6 l6">
+                <article class="col s12 m6 l6">
                   <a href="{{ post.url | prepend: site.baseurl }}">
                     <div class="card">
                       <div class="card-image">
@@ -32,14 +32,14 @@ images: "http://i.imgur.com/DCfgKwb.jpg"
                             {% break %}
                           {% endif %}
                         {% endfor %}
-                        <span class="card-title">{{ post.title }}</span>
+                        <span class="card-title truncate">{{ post.title }}</span>
                       </div>
                       <div class="card-content">
-                        <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+                        <p>{{ post.desc | truncatewords: 35 }}</p>
                       </div>
 
                       <div class="fixed-action-btn horizontal">
-                        <a href="{{ post.url | prepend: site.baseurl }}" class="btn-floating btn-large indigo darken-4">
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="btn-floating btn-large z-depth-2 blue-grey lighten-3">
                           <i class="fa fa-share" aria-hidden="true"></i>
                         </a>
                         <ul>
@@ -49,13 +49,8 @@ images: "http://i.imgur.com/DCfgKwb.jpg"
 </a>
 </li>
 <li>
-<a class="btn-floating blue darken-4" href="http://twitter.com/intent/tweet?status=[{{post.title}}]+[{{post.url | prepend: site.siteurl}}]" target="blank">
+<a class="btn-floating blue" href="http://twitter.com/intent/tweet?status=[{{post.title}}]+[{{post.url | prepend: site.siteurl}}]" target="blank">
 <i class="fa fa-twitter" aria-hidden="true"></i>
-</a>
-</li>
-<li>
-<a class="btn-floating blue darken-4" href="http://www.linkedin.com/shareArticle?mini=true&url=[{{post.url | prepend: site.siteurl}}]&title=[{{post.title}}]&source=[{{site.url}}]" target="blank">
-<i class="fa fa-instagram" aria-hidden="true"></i>
 </a>
 </li>
                         </ul>
@@ -63,7 +58,7 @@ images: "http://i.imgur.com/DCfgKwb.jpg"
 
                     </div>
                   </a>
-                </div>
+                </article>
 
 {% endfor %}
 

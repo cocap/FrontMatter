@@ -19,8 +19,14 @@ $(window).scroll(function() {
     "-webkit-filter": "blur(" + (scroll/1000) + "px)",
     filter: "blur(" + (scroll/15) + "px)"
   });
-});
 
+  if($(document).scrollTop() > 1080){
+    $('.parallax-zoom-blur img').css({'display': 'none'});
+  }else {
+    $('.parallax-zoom-blur img').css({'display': 'block'});
+  }
+
+});
 
 </script>
 

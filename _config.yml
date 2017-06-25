@@ -4,6 +4,7 @@ author: Morten Pradsgaard
 description: "Awesome description [01]"
 siteurl: https://cocap.github.io/FrontMatter/
 baseurl: /FrontMatter/
+date: YYYY-MM-DD
 
 # build settings
 excerpt_separator: <!--more-->
