@@ -44,7 +44,9 @@ images: "http://i.imgur.com/DCfgKwb.jpg"
                         </a>
                         <ul>
                           <li><a class="btn-floating blue darken-4"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">Share on Facebook</a></li>
+<li><a href="https://www.facebook.com/dialog/feed?app_id=488375674843191&redirect_uri={{post.url | prepend: site.siteurl}}&link={{post.url | prepend: site.siteurl}}&picture={{post.images}}&caption={{post.title}}&description=This%20is%20the%20description" target="blank">
+
+Share on Facebook</a></li>
                           <li><a class="btn-floating blue darken-4"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                           <li><a class="btn-floating blue darken-4"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                         </ul>

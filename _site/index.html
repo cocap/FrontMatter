@@ -113,7 +113,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis ligula risus
                         </a>
                         <ul>
                           <li><a class="btn-floating blue darken-4"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">Share on Facebook</a></li>
+<li><a href="https://www.facebook.com/dialog/feed?app_id=488375674843191&amp;redirect_uri=https://cocap.github.io/FrontMatter//artikel/den-kaekke-raev-tog-oellen&amp;link=https://cocap.github.io/FrontMatter//artikel/den-kaekke-raev-tog-oellen&amp;picture=http://i.imgur.com/DCfgKwb.jpg&amp;caption=Den kække ræv tog øllen&amp;description=This%20is%20the%20description" target="blank">
+
+Share on Facebook</a></li>
                           <li><a class="btn-floating blue darken-4"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                           <li><a class="btn-floating blue darken-4"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                         </ul>
@@ -184,13 +186,24 @@ $(window).scroll(function() {
 
 </script>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<!--Connect to Facebook app API-->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '488375674843191',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
 </html>
