@@ -4,7 +4,7 @@
 }
 #signupToggle.is-active { /*Toggled/Minified Container*/
   position:fixed;bottom:10px;left: 2vw;
-  width:10vw;height:40px;
+  width:200px;height:40px;
   background-color:#2980b9;
   border-radius: 5px;
   transition: all .2s;
@@ -33,12 +33,12 @@
 display:block;  }
 
 #signupToggle:before { /*Text for Close button*/
-  position:fixed;bottom: 20.5vw;left:35.5vw;
+  position:fixed;bottom: 390px;left:590px;
   font-family: 'Helvetica';
   font-weight: 100;
   font-size: 1.5em;
   color:#5d617d;text-decoration:none;
-  background-color:transparent  ;
+  background-color:transparent;
   padding: 6px 10px  5px 11px;
   border-radius: 50%;
   transition: all .2s;
@@ -52,8 +52,8 @@ display:block;  }
 display:none; }
 
 #signupToggled {/*Style for the Container*/
-  position:fixed;bottom: 0; left: 2vw;
-  width:36vw;height:23vw;
+  position:fixed;bottom: 0; left: 40px;
+  width:600px;height:450px;
   background-color:#2b2e40;color:#fff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -62,9 +62,9 @@ display:none; }
   0 1px 18px 0 rgba(0,0,0,0.12),
   0 3px 5px -1px rgba(0,0,0,0.3);
 }
-.signupToggledContent {margin: 100px 10%;}
+.signupToggledContent {margin: 80px 10%;}
 .signupToggledContent h4 {
-  font-size: 40px;
+  font-size: 26px;
   font-weight: 100;
 }
 
@@ -74,24 +74,24 @@ display:none; }
 }
 @media (max-width: 1339px){
   #signupToggle:after {
-    width: 56vw;height:43vw;
+    width:600px;height:450px;
   }
   #signupToggled {
-    width: 56vw;height:43vw;
+    width:600px;height:450px;
   }
 }
 
 /*FORM STYLE*/
 
-form {
+#mc_embed_signup form {
   font-family: 'Helvetica';
   font-weight: 100;font-size: 1.5em;
   margin: 50px 10%;
 }
-.group {
+#mc_embed_signup .group {
   position:relative;
 }
-input 				{
+#mc_embed_signup input 				{
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
@@ -101,9 +101,9 @@ input 				{
   background:transparent;
   color:#fff;
 }
-input:focus 		{ outline:none; }
+#mc_embed_signup input:focus 		{ outline:none; }
 
-label 				 {
+#mc_embed_signup label 				 {
   color:#999;
   font-size:18px;
   font-weight:normal;
@@ -116,12 +116,12 @@ label 				 {
   -webkit-transition:0.2s ease all;
 }
 
-input:focus ~ label, input:valid ~ label 		{
+#mc_embed_signup input:focus ~ label, input:valid ~ label 		{
   top:-20px;
   font-size:14px;
   color:#fff;
 }
- input[type="submit"]{
+#mc_embed_signup input[type="submit"]{
    margin: 20px 0;
    cursor:pointer;
    border: 1px solid #fff;
