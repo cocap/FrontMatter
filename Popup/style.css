@@ -1,6 +1,6 @@
 @charset "UTF-8";
 #signupToggle { /*The Toggle original position (Creates the fly effect)*/
-  position:fixed;bottom: 21.5vw;left:36.5vw;
+  position:fixed;bottom:-40px;left:40px;
 }
 #signupToggle.is-active { /*Toggled/Minified Container*/
   position:fixed;bottom:10px;left: 2vw;
@@ -71,15 +71,9 @@ display:none; }
 @media (max-width: 767px){
   #signupToggle { display:none; }
   #signupToggled:after { display:none; }
+  #signupToggled { display:none; }
 }
-@media (max-width: 1339px){
-  #signupToggle:after {
-    width:600px;height:450px;
-  }
-  #signupToggled {
-    width:600px;height:450px;
-  }
-}
+
 
 /*FORM STYLE*/
 

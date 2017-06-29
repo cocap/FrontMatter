@@ -42,7 +42,7 @@
 </div>
 
 <!--un toggled = X && toggled = Minified Container-->
-<div id="signupToggle" value="Vind et gavekort!" onclick="TermsAndConditions()"></div>
+<div id="signupToggle" value="Vind et gavekort!" onclick="signupcookie()"></div>
 
 
 
@@ -51,18 +51,18 @@
 
 $( document ).ready(function() {
 
-  function TermsAndConditions(){
+  function signupcookie(){
 
      days=30;
      myDate = new Date();
      myDate.setTime(myDate.getTime()+(days*24*60*60*1000));
 
-     document.cookie = 'TermsAndConditions=Accepted; expires=' + myDate.toGMTString();
+     document.cookie = 'signupcookie=Accepted; expires=' + myDate.toGMTString();
 
   }
 
   function CheckCookies(){
-      if ($.cookie("TermsAndConditions") === "Accepted")
+      if ($.cookie("signupcookie") === "Accepted")
       {
           $("#signupToggled").slideToggle();
       }
